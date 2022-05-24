@@ -37,7 +37,7 @@ The below steps are carried out in a typical MirroredStrategy execution flow:
 - ### MultiWorkerMirroredStrategy
 
 The MultiWorkerMirroredStrategy support the model training over multiple machines essentially with multiple GPUs attached to them. This strategy is quite similar to Mirrored strategy as per execution is considered. One thing that we need to specify in this scenario is **TF_CONFIG** environment variable. This variable must be set in the environment variables which will direct the program for using multiple workers. \
-There are two components of a TF_CONFIG variable: 'cluster' and 'task' \
+There are two components of a TF_CONFIG variable: 'cluster' and 'task'.
 - A 'cluster' is the same for all workers and provides information about the training cluster, which is a dict consisting of different types of jobs, such as 'worker' or 'chief'. 
 - A 'task' provides information on the current task and is different for each worker. It specifies the 'type' and 'index' of that worker. \
 
