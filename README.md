@@ -12,7 +12,7 @@ In case of distributed training, we got two main types:
 
 In this post we are going to discuss about Data parallelism options available in tensorflow.
 
-In data parallelism we have two options:
+In data parallelism we have two options: \
 **1. Synchronous** - In synchronous training each replica receives a different slice of input batch and trains only on that data laters all the gradients are aggregated and updated. \
 **2. Asynchronous** - In asynchronous training all workers train independently and variables are updated asynchronously.
 
